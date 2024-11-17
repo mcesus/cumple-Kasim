@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Rogue Hero';
+    src: url(./fonts/roguehero.ttf)
+}
+:root{
+    --bc: #fecb18;
+    --text-red: #A00F31;
+    --text-yellow:#f5d70b;
+}
+.container{
+    width: 420px;
+    height: 1800px;
+    border: 1px solid var(--bc);
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: var(--bc);
+}
+
+.principal{
+    background-image: url(./img/deadpool-wolverine-2.jpg.webp);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit:fill;
+    border: 1px solid var(--bc);
+    font-family: 'Rogue Hero';
+    margin-bottom: 30px;
+}
+.principal h1{
+    text-align: center;
+    margin-top: 300px;
+    font-family: 'Rogue Hero';
+    font-size: 70px;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), -20px -33px 1px rgba(206,89,55,0);
+    color: var(--text-red);
+}
+
+.principal .cumple{
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Rogue Hero';
+    font-size: 48px;
+    color: var(--text-red);
+    text-shadow: 
+        -1px -3px 0 #000,  
+         1px -3px 0 #000,
+        -1px  3px 0 #000,
+         1px  3px 0 #000;
+
+}
+
+.sonido{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    animation: titilar 1.5s infinite;
+ 
+    font-family: 'Rogue Hero';
+
+}
+
+@keyframes titilar {
+    0%, 100% {
+        opacity: 1; /* Totalmente visible */
+    }
+    50% {
+        opacity: 0; /* Totalmente invisible */
+    }
+}
+
+.sonido-play{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+
+.detalles{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    gap: 30px;
+    text-align: center;
+    font-family: 'Rogue Hero';
+    font-size: 36px;
+    border: 1px solid var(--bc);
+    
+}
+
+.final{
+    height: 150px;
+    border: 1px solid var(--bc);
+    font-family: 'Rogue Hero';
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+
+.divisorio img {
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+
+}
